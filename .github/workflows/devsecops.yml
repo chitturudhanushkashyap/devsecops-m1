@@ -20,9 +20,9 @@ jobs:
         run: docker build -t m1-app .
 
       - name: Run Trivy Scan
-        uses: aquasecurity/trivy-action@master
+        uses: aquasecurity/trivy-action@0.20.0
         with:
           image-ref: m1-app
           format: table
           exit-code: '0'
-          severity: CRITICALgit add .
+          severity: CRITICAL
